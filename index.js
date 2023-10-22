@@ -34,6 +34,22 @@ const questions = [
     message: 'Enter test instructions: ',
     name: 'test'
   },
+  {
+    type: 'list',
+    message: 'Pick a license: ',
+    name: 'license',
+    choices: [
+      {name: 'Apache License 2.0', value: 'https://choosealicense.com/licenses/apache-2.0/'},
+      {name: 'Boost Software License 1.0', value: 'https://choosealicense.com/licenses/bsl-1.0/'},
+      {name: 'GNU AGPLv3', value: 'https://choosealicense.com/licenses/gpl-3.0/'},
+      {name: 'GNU GPLv3', value: 'https://choosealicense.com/licenses/gpl-3.0/'},
+      {name: 'GNU LGPLv3', value: 'https://choosealicense.com/licenses/lgpl-3.0/'},
+      {name: 'MIT License', value: 'https://choosealicense.com/licenses/mit/'},
+      {name: 'Mozilla Public License', value: 'https://choosealicense.com/licenses/mpl-2.0/'},
+      {name: 'The Unlicense', value: 'https://choosealicense.com/licenses/unlicense/'},
+      new inquirer.Separator()
+    ]
+  }
 ];
 
 // TODO: Create a function to write README file

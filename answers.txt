@@ -1,0 +1,1 @@
+{"title":"asdad","description":"asdad","install":"asdad","usage":"aasdsa","contribution":"asdad","test":"asdaas","license":"https://choosealicense.com/licenses/mit/"}
