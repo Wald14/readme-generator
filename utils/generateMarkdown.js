@@ -1,45 +1,55 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license === 'none') {
+    return '';
+  } else {
+    return `
+${license.badge} `;
+  }
+}
 
-// TODO: Create a function that returns the license link
+// Function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === 'none') {
+    return '';
+  } else {
+    return `
+## License
+${license.link}
+    `;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # ${data.title}
+# ${data.title}${renderLicenseBadge(data.license)}
 
-  ## Description
-  ${data.description}
+## Description
+${data.description}
 
-  ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
-  ## Installation
+## Installation
 
-  ## Usage
-  ${data.usage}
+## Usage
+${data.usage}
 
-  ## Credits
+## Credits
+${renderLicenseSection(data.license)}
 
-  ## License
-  ${data.license}
+## How to contribute
+${data.constibute}
 
-  ## How to contribute
-  ${data.constibute}
-
-  ## Tests
-  ${data.tests}
+## Tests
+${data.tests}
 
 `;
 }
 
-module.exports = {generateMarkdown};
+module.exports = generateMarkdown;
