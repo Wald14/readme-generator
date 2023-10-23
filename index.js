@@ -12,32 +12,32 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Enter a short description of the project: ',
+    message: 'Enter a short description of the project:',
     name: 'description'
   },
   {
     type: 'input',
-    message: 'Enter installation instructions: ',
+    message: 'Enter installation instructions:',
     name: 'install'
   },
   {
     type: 'input',
-    message: 'Enter usage information: ',
+    message: 'Enter usage information:',
     name: 'usage'
   },
   {
     type: 'input',
-    message: 'Enter contribution guidelines: ',
+    message: 'Enter contribution guidelines:',
     name: 'constibute'
   },
   {
     type: 'input',
-    message: 'Enter test instructions: ',
+    message: 'Enter test instructions:',
     name: 'tests'
   },
   {
     type: 'list',
-    message: 'Pick a license: ',
+    message: 'Pick a license:',
     name: 'license',
     choices: [
       {

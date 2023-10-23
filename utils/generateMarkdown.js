@@ -22,6 +22,18 @@ ${license.link}
   }
 }
 
+// Function that returns the Table of Contents section of README
+function renderTableOfContents(data) {
+  const installLink = data.install === '' ? '' : '- [Installation](#installation)\n'
+  const usageLink = data.usage === '' ? '' : '- [Usage](#usage)\n'
+  const licenseLink = data.license === '' ? '' : '- [License](#license)\n';
+
+  return `
+## Table of Contents\n${installLink}${usageLink}${licenseLink}
+  `;
+}
+
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -30,10 +42,7 @@ function generateMarkdown(data) {
 ## Description
 ${data.description}
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
+${renderTableOfContents(data)}
 
 ## Installation
 
