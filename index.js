@@ -78,7 +78,7 @@ const questions = [
       {
         name: 'MIT License',
         value: {
-          link:'[MIT](hhttps://opensource.org/license/mit/)',
+          link:'[MIT](https://opensource.org/license/mit/)',
           badge:'[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
       }
       },
