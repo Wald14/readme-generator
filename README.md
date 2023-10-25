@@ -24,6 +24,8 @@ A high-quality README is then generated that includes the corresponding sections
 ## Usage
 Run 'node index.js' in the command line. Answer all prompts. Then navigate to the 'new_readme' folder to find your newly generated README.md file.
 
+Here is a video of the application in use: [Click here](https://drive.google.com/file/d/1ui5ya3vKGM-jySOdb9ObbutZgm18-7Zp/view)
+
 
 ## Questions
 - Questions can be received on the [Github Repository](https://github.com/Wald14) for this application. Please open a new issue.
