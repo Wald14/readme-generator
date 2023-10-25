@@ -121,7 +121,7 @@ function init() {
   console.log("Answer the following questions to generate your new README.md file. If you don't need a section, leave it blank and it won't be added to the README")
   inquirer.prompt(questions).then(answers => {
     let info = generateMarkdown(answers);
-    writeToFile("./new_readme/newREADME.md", info)
+    writeToFile("./new_readme/README.md", info)
     console.log('Your starting README file has been made. It can be found in the "new_readme" folder and is labeled "README.md". As you develop your web application, make sure to continue to expand the README.md file in the appropriate sections.')
   })
 
