@@ -12,6 +12,8 @@ A high-quality README is then generated that includes the corresponding sections
 - [Installation](#installation)
 - [Usage](#usage)
 - [Questions](#questions)
+- [Acknowledgements](#acknowledgements)
+- [Preview](#preview)
 
   
 ## Installation
@@ -24,7 +26,7 @@ Run 'node index.js' in the command line. Answer all prompts. Then navigate to th
 
 
 ## Questions
-- Questions can be received on my [Github](https://github.com/Wald14). Please make an issue.
+- Questions can be received on the [Github Repository](https://github.com/Wald14) for this application. Please open a new issue.
 
 
 ## Acknowledgements
