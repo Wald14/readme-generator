@@ -4,9 +4,7 @@ function renderTitle(title) {
   if (title === '') {
     return '';
   } else {
-    return `
-# ${title}
-`;
+    return `# ${title}`;
   }
 }
 
